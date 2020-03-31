@@ -4,4 +4,4 @@ title:  "Welcome to Jekyll!"
 date:   2020-03-31 18:15:01 +0200
 categories: hero
 ---
-![logo](/assets/logo.svg)
+![logo](/votroubek_facility/assets/logo.svg)
