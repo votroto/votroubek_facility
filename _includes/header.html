@@ -21,7 +21,7 @@ padding-right: 0.5em;
     {%- assign default_paths = site.pages | map: "path" -%}
     {%- assign page_paths = site.header_pages | default: default_paths -%}
 
-    <a class=" call_to_action" href="tel: {{ site.phone | escape }}"><img src="/assets/phone.svg"><span>{{ site.phone_short | escape }}</span></a>
+    <a class=" call_to_action" href="tel: {{ site.phone | escape }}"><img src="assets/phone.svg"><span>{{ site.phone_short | escape }}</span></a>
 
     {%- if page_paths -%}
       <nav class="site-nav">
