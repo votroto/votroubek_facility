@@ -3,6 +3,6 @@ layout: default
 categories: service
 ---
 
-# Facility service
+# Facility servis
 
-Ut porttitor at dolor at mollis. Nam eu quam risus. Donec venenatis mauris quis condimentum dictum. Aenean vel gravida ipsum. Suspendisse placerat quam eget arcu vestibulum aliquam. Fusce eu fermentum tortor, sed ultricies nisi. Suspendisse id mi ac nunc lacinia dignissim. Donec euismod faucibus mi ac facilisis. 
+Nabízím kompletní péči o vaši nemovitost. Vše od zajištění pravidelných revizí  až po údržbu a provoz technických zařízení a vozového parku.  
