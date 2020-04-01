@@ -3,7 +3,6 @@ layout: default
 categories: service
 ---
 
-
 # Hodinový manžel
 
 Potřebujete pomoci v domácnosti nebo na zahradě? Využijte mých služeb.
