@@ -2,11 +2,21 @@
 layout: default
 ---
 <style>
+
+section {
+padding-top: 3em;
+}
 .section_service {
 display: grid;
 grid-gap: 1em;
 gap: 1em;
 grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
+margin-bottom: 4em;
+}
+
+.section_service > .service{
+background-color: white;
+padding: 1em;
 }
 
 .price_bubble {
@@ -30,7 +40,7 @@ margin: auto;
 	text-align: center;
 	width: fit-content;
 	margin: auto;
-	margin-bottom: 8em;
+	margin-bottom: 5em;
 margin-top: 3em;
 }
 .subtitle {
@@ -42,13 +52,9 @@ margin:auto;
 </style>
 <div class="home">
 <section class="section_hero" id="section_hero">
-{%- for post in site.categories.hero -%}
 	<div class="hero">
-		{{ post.content }}
 <div class="subtitle">{{site.description}}</div>
 	</div>
-
-{%- endfor -%}
 </section>
 <section class="section_service" id="section_service">
 {%- for post in site.categories.service -%}
