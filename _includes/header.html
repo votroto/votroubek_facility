@@ -100,5 +100,5 @@ function stickyNavigation() {
   }
 }
 
-window.addEventListener('scroll', stickyNavigation);
+window.addEventListener('scroll', stickyNavigation, { capture: false, passive: true});
 </script>
