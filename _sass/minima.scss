@@ -50,11 +50,22 @@ $on-laptop:        800px !default;
 ;
 
 
-   .page-content {
-	background-image:url("/votroubek_facility/assets/pozadi2.jpg");
-background-size:cover;
-   }
- 
+
+.page-content::after {
+    background: linear-gradient(30deg, #fffffe, #eee);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    content: "";
+    z-index: -1;
+}
+.page-content {
+    background-image: url("http://api.thumbr.it/whitenoise-361x370.png?background=fcfcfe00&noise=d0e0d0&density=25&opacity=90 ");
+    position: relative;
+}
+
 @include media-query($on-palm) {
    .page-content {
 	background-image:none;
