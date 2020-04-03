@@ -5,6 +5,7 @@ background-color: whitesmoke;
 }
 
 .call_to_action {
+
 margin-top:auto;
 margin-bottom:auto;
 padding: 0.8em;
@@ -26,7 +27,8 @@ width: 12em;
 }
 
 .spacing{
-
+align-items: center;
+text-align:center;
     display: flex;
     justify-content: space-between;
 
@@ -50,7 +52,7 @@ width:100%;
 
 <img class="logo" src="/votroubek_facility/assets/logo.svg">
     <a class=" call_to_action" href="tel: {{ site.phone | escape }}"><img src="/votroubek_facility/assets/phone.svg"><span>{{ site.phone_short | escape }}</span></a>
-
+  
   </div>
   </div>
 
@@ -89,10 +91,9 @@ width:100%;
 <script>
 const stick = document.querySelector('#header_stick');
 const htop = document.querySelector('#header_top');
-const navTop = htop.offsetTop;
 
 function stickyNavigation() {
-  if (window.scrollY >= navTop) {
+  if (window.scrollY >= htop.offsetTop) {
     stick.style.visibility = "visible"; 
   } else {
     stick.style.visibility = "hidden"; 
