@@ -6,6 +6,55 @@ layout: default
 section {
 padding-top: 3em;
 }
+
+
+.gallery {
+justify-content:center;
+display: flex;
+  flex-wrap: wrap;
+}
+
+.photo:before {
+content:"";
+  position: absolute;
+top:-25px;
+left:-5px;
+right:-5px;
+height:20px;
+background-image: linear-gradient(90deg, black 35%, transparent 35%, transparent 65%, black 65%), linear-gradient(0deg, black 10px, transparent 10px);
+background-size: 20px 25px;
+background-position: 0 0, 0 10px;
+}
+
+
+.photo:after {
+content:"";
+
+  position: absolute;
+bottom:-25px;
+left:-5px;
+right:-5px;
+height:20px;
+background-image: linear-gradient(90deg, black 35%, transparent 35%, transparent 65%, black 65%), linear-gradient(0deg, black 10px, transparent 10px);
+background-size: 20px 25px;
+background-position: 0 0, 0 20px;
+}
+
+
+.photo{
+  position: relative;
+display:block;
+border: 5px solid black;
+margin-top:20px;
+margin-bottom:20px;
+}
+
+
+
+.photo img{
+width:150px;
+}
+
 .section_service {
 display: grid;
 grid-gap: 1em;
@@ -88,5 +137,16 @@ margin:auto;
 	</div>
 {%- endfor -%}
 </section>
-</div>
+<section class="section_gallery" id="section_gallery">
+{%- for post in site.categories.gallery -%}
+		{{ post.content }}
+	<div class="gallery">
+{%- for img in post.images -%}
+<a class="photo" data-fancybox="gallery"  href="{{img.ig}}media?size=l"><img src="{{img.ig}}media?size=t"></a>
+{%- endfor -%}
+	</div>
+{%- endfor -%}
+</section>
+
+
 </div>
