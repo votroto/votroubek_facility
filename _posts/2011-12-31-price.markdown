@@ -6,5 +6,5 @@ categories: price
 ---
 
 # Cena
- - Doprava podle hodinove sazby
- - Minimalne uctuji 30 minut
+ - Doprava podle hodinové sazby
+ - Minimálně účtuji 30 minut

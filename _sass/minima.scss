@@ -48,3 +48,15 @@ $on-laptop:        800px !default;
   "minima/layout",
   "minima/syntax-highlighting"
 ;
+
+
+   .page-content {
+	background-image:url("/votroubek_facility/assets/pozadi2.jpg");
+background-size:cover;
+   }
+ 
+@include media-query($on-palm) {
+   .page-content {
+	background-image:none;
+   }
+ }
