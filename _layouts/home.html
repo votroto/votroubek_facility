@@ -17,11 +17,11 @@ display: flex;
 .photo:before {
 content:"";
   position: absolute;
-top:-25px;
+top:-24px;
 left:-5px;
 right:-5px;
 height:20px;
-background-image: linear-gradient(90deg, black 35%, transparent 35%, transparent 65%, black 65%), linear-gradient(0deg, black 10px, transparent 10px);
+background-image: linear-gradient(90deg, #828282 35%, transparent 35%, transparent 65%, #828282 65%), linear-gradient(0deg, #828282 10px, transparent 10px);
 background-size: 20px 25px;
 background-position: 0 0, 0 10px;
 }
@@ -31,11 +31,11 @@ background-position: 0 0, 0 10px;
 content:"";
 
   position: absolute;
-bottom:-25px;
+bottom:-24px;
 left:-5px;
 right:-5px;
 height:20px;
-background-image: linear-gradient(90deg, black 35%, transparent 35%, transparent 65%, black 65%), linear-gradient(0deg, black 10px, transparent 10px);
+background-image: linear-gradient(90deg, #828282 35%, transparent 35%, transparent 65%, #828282 65%), linear-gradient(0deg, #828282 10px, transparent 10px);
 background-size: 20px 25px;
 background-position: 0 0, 0 20px;
 }
@@ -44,7 +44,7 @@ background-position: 0 0, 0 20px;
 .photo{
   position: relative;
 display:block;
-border: 5px solid black;
+border: 5px solid #828282;
 margin-top:20px;
 margin-bottom:20px;
 }
@@ -53,19 +53,21 @@ margin-bottom:20px;
 
 .photo img{
 width:150px;
+height: 115px;
+object-fit: cover;
 }
 
 .section_service {
 display: grid;
-grid-gap: 1em;
-gap: 1em;
+grid-gap: 1.5rem;
+gap: 1.5rem;
 grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
 margin-bottom: 4em;
 }
 
 .section_service > .service{
 background-color: white;
-padding: 1em;
+padding: 1.5rem;
     position: relative;
   -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 2em, calc(100% - 2em) 0);
   clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 2em, calc(100% - 2em) 0);
