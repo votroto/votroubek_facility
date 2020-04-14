@@ -28,8 +28,8 @@ dph: Nejsem plátcem DPH
 bank: "987654312"
 description: >- # this means to ignore newlines until "baseurl:"
   Nabízím služby Hodinového manžela a Facility service pro Prahu a okolí.
-baseurl: "/votroubek_facility" # the subpath of your site, e.g. /blog
-url: "https://votroto.github.io" # the base hostname & protocol for your site, e.g. http://example.com
+baseurl: "" # the subpath of your site, e.g. /blog
+url: "https://votroubekfacility.cz" # the base hostname & protocol for your site, e.g. http://example.com
 instagram_username: votroubek_facility
 facebook_username: votroubekfacility
 
