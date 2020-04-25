@@ -23,11 +23,11 @@ title: Votroubek facility
 email: votroubek.mich@seznam.cz
 phone: "+420 702 149 584"
 phone_short: "702 149 584"
-ico: "000000000"
+ico: "06526764"
 dph: Nejsem plátcem DPH
 bank: "987654312"
 description: >- # this means to ignore newlines until "baseurl:"
-  Nabízím služby Hodinového manžela a Facility service pro Prahu a okolí.
+  Nabízím služby hodinového manžela a facility service pro Prahu a okolí.
 baseurl: "" # the subpath of your site, e.g. /blog
 url: "https://votroubekfacility.cz" # the base hostname & protocol for your site, e.g. http://example.com
 instagram_username: votroubek_facility
