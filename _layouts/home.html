@@ -144,7 +144,7 @@ margin:auto;
 		{{ post.content }}
 	<div class="gallery">
 {%- for img in post.images -%}
-<a class="photo" data-fancybox="gallery"  href="{{img.ig}}media?size=l"><img src="{{img.ig}}media?size=t"></a>
+<a class="photo" data-fancybox="gallery"  href="/assets/t{{img.ig}}.jpg"><img src="/assets/l{{img.ig}}.jpg"></a>
 {%- endfor -%}
 	</div>
 {%- endfor -%}
