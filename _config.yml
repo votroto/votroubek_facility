@@ -17,7 +17,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-price: 250
+price: 350
 author: Michal Votroubek
 title: Votroubek facility
 email: votroubek.mich@seznam.cz
