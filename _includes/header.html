@@ -35,11 +35,9 @@ text-align:center;
 
 }
 
-.fixed-nav {
-background-color:#fefefe;
-visibility: hidden;
-width:100%;
-  position: fixed;
+.header_top {
+  position: -webkit-sticky;
+  position: sticky;
   top:0;
   z-index: 1;
 }
@@ -57,24 +55,6 @@ width:100%;
 
 </header>
 
-
-
-<div id="header_stick" class="fixed-nav">
-<header  class="site-header" role="banner">
-
-  <div class="wrapper">
-      <nav class="site-nav">
-        
-<a class="page-link" href="#section_home">Úvod</a>
-<a class="page-link" href="#section_service">Služby</a>
-<a class="page-link" href="#section_price">Ceník</a>
-<a class="page-link" href="#section_contact">Kontakt</a>
-        
-      </nav>
-  </div>
-</header>
-  </div>
-
 <header id="header_top"  class="site-header" role="banner">
 
   <div class="wrapper">
@@ -87,18 +67,3 @@ width:100%;
       </nav>
   </div>
 </header>
-<script>
-stick = document.querySelector('#header_stick');
-htop = document.querySelector('#header_top');
-
-function stickyNavigation() {
-  if (window.scrollY >= htop.offsetTop) {
-    stick.style.visibility = "visible"; 
-  } else {
-    stick.style.visibility = "hidden"; 
-
-  }
-}
-
-window.addEventListener('scroll', stickyNavigation, { capture: false, passive: true});
-</script>
