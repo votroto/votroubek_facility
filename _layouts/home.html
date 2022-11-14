@@ -58,16 +58,14 @@ object-fit: cover;
 }
 
 .section_service {
-display: grid;
-grid-gap: 1.5rem;
-gap: 1.5rem;
-grid-template-columns: repeat(auto-fit, minmax(30ch, 1fr));
-margin-bottom: 4em;
+display: flex;
 }
 
 .section_service > .service{
 background-color: #fefefe;
 padding: 1.5rem;
+margin:auto;
+max-width: 45ch;
     position: relative;
   -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 2em, calc(100% - 2em) 0);
   clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 2em, calc(100% - 2em) 0);
@@ -107,11 +105,6 @@ margin:auto;
 
 </style>
 <div class="home">
-<section class="section_hero" id="section_hero">
-	<div class="hero">
-<div class="subtitle">{{site.description}}</div>
-	</div>
-</section>
 <section class="section_service" id="section_service">
 {%- for post in site.categories.service -%}
 	<div class="service">

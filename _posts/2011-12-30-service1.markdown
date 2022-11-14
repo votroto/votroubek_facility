@@ -1,9 +1,0 @@
----
-layout: default
-search: exclude
-categories: service
----
-
-# Hodinový manžel
-
-Potřebujete pomoci v domácnosti nebo na zahradě? Využijte mých služeb.
