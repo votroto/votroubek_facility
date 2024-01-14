@@ -1,0 +1,61 @@
+.price_bubble {
+    align-items: center;
+    margin: auto;
+    display: flex;
+
+    background-color: $contrast;
+
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 2em, calc(100% - 2em) 0);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 2em, calc(100% - 2em) 0);
+
+    width: 10em;
+    height: 10em;
+}
+
+.price_bubble_content {
+    text-align: center;
+    line-height: 1;
+    color: black;
+
+    font-size: 2em;
+    margin: auto;
+}
+
+.price_section {
+    width: 100%;
+    display: flex;
+}
+
+.price_section h3 {
+    margin-top: 0;
+}
+
+.price_card {
+    display: flex;
+    gap: 2em;
+    margin: auto;
+    padding: 1em;
+    justify-content: center;
+    align-items: center;
+}
+
+.price_card ul {
+    padding-left: 0;
+    margin-bottom: 0;
+    list-style-type: none;
+}
+
+.price_bubble_content_one {
+    display: block;
+    font-size: 0.7em;
+}
+
+.price_bubble_content_two {
+    display: block;
+    font-size: 1.5em;
+}
+
+.price_bubble_content_thr {
+    display: block;
+    font-size: 0.5em;
+}

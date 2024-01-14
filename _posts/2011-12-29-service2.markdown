@@ -1,9 +1,0 @@
----
-layout: default
-search: exclude
-categories: service
----
-
-# Facility servis
-
-Nabízím kompletní péči o vaši nemovitost. Vše od zajištění pravidelných revizí  až po údržbu a provoz technických zařízení a vozového parku.  

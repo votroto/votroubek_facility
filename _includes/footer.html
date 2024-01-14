@@ -1,48 +1,26 @@
-<footer class="site-footer h-card" id="section_contact">
-  <data class="u-url" href="{{ "/" | relative_url }}"></data>
-
-  <div class="wrapper">
-
-    <h2 class="footer-heading">{{ site.title | escape }}</h2>
-
-    <div class="footer-col-wrapper">
-      <div class="footer-col footer-col-1">
-        <ul class="contact-list">
-          <li class="p-name">
-            {%- if site.author -%}
-              {{ site.author | escape }}
-            {%- else -%}
-              {{ site.title | escape }}
-            {%- endif -%}
-            </li>
-            {%- if site.email -%}
-                <li><a class="u-email" href="mailto:{{ site.email }}">{{ site.email }}</a></li>
-	    {%- endif -%}
-	    {%- if site.phone -%}
-                <li><a class="u-phone" href="tel:{{ site.phone }}">{{ site.phone }}</a></li>
-	    {%- endif -%}
-	    {%- if site.ico -%}
-		<li>IČO: {{ site.ico }}</li>
-	    {%- endif -%}
-            {%- if site.dph -%}
-		<li>{{ site.dph }}</li>
-	    {%- endif -%}
-	    {%- if site.bank -%}
-		<li>Číslo účtu: {{ site.bank }}</li>
-            {%- endif -%}
-        </ul>
-      </div>
-
-      <div class="footer-col footer-col-2">
-        {%- include social.html -%}
-      </div>
-
-      <div class="footer-col footer-col-3">
-        <p>{{- site.description | escape -}}</p>
-      </div>
+<footer>
+    <div class="topfooter footer-wrapper content-wrapper">
+        <div>
+            <div class="call">
+                <h5 id="kontakt">Zavolejte mi</h5>
+                <a aria-label="Zavolejte mi" href="{{ tel:site.phone }}">{{ site.phone_short }}</a>
+            </div>
+            <ul class="contact">
+                <li><img src="/assets/ico/at-sign-w.svg"><span><a href="mailto: {{ site.email }}">{{ site.email }}</a></span></li>
+                <li><img src="/assets/ico/person-w.svg"><span>Michal Votroubek</span></li>
+            </ul>
+        </div>
+        <div id="social">
+            <h5>Jsem na sítích</h5>
+            <ul class="contact">
+                <li><img src="/assets/ico/instagram-w.svg"><span><a href="https://instagram.com/{{ site.instagram_username }}">{{ site.instagram_username }}</a></span></li>
+                <li><img src="/assets/ico/facebook-w.svg"><span><a href="https://www.facebook.com/{{ site.facebook_username }}">{{ site.facebook_username }}</a></span></li>
+            </ul>
+        </div>
     </div>
-
-  </div>
-
 </footer>
-
+<footer class="tail-footer">
+    <div class="content-wrapper">
+        <small>IČ: {{ site.ico }}, {{ site.dph }}. Icons from <a href="//www.feathericons.com">feather</a>.</small>
+    </div>
+</footer>

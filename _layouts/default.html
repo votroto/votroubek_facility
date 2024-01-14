@@ -1,20 +1,17 @@
 <!DOCTYPE html>
-<html lang="{{ page.lang | default: site.lang | default: "en" }}">
+<html lang="{{ site.lang | default: "cs-CZ" }}">
+{% include head.html %}
 
-  {%- include head.html -%}
-
-  <body>
-
-    {%- include header.html -%}
-
-    <main class="page-content" aria-label="Content">
-      <div class="wrapper">
-        {{ content }}
-      </div>
+<body onload="owl()">
+{% include header.html %}
+{% include nav.html %}
+    <main>
+        <div class="content-wrapper">
+            {{ content }}
+        </div>
     </main>
-
-    {%- include footer.html -%}
-
-  </body>
+{% include footer.html %}
+{% include carousel.html %}
+</body>
 
 </html>

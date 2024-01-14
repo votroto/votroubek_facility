@@ -1,0 +1,78 @@
+.carousel-img {
+    object-fit: cover;
+    height: 520px;
+    max-height: 100vw;
+    text-align: center;
+}
+
+.carousel-card>h5 {
+    font-size: 1.25rem;
+    margin-top: 1em;
+}
+
+.carousel-card {
+    padding-bottom: 0.5em;
+}
+
+.owl-carousel-wrapper {
+    min-height: 520px;
+
+    @media only screen and (max-width: 520px) {
+        min-height: 100vw;
+    }
+}
+
+main .owl-carousel .owl-nav button.owl-next,
+main .owl-carousel .owl-nav button.owl-prev {
+    display: flex;
+    padding: 16px !important;
+    margin: 0;
+    height: fit-content;
+    pointer-events: auto;
+}
+
+main .owl-carousel .owl-nav button img {
+    background: $bg-color;
+}
+
+main .owl-carousel .owl-nav {
+    pointer-events: none;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    position: absolute;
+    top: calc(50% - 2em);
+    left: 0px;
+    right: 0px;
+}
+
+.owl-carousel .owl-nav .owl-prev:hover, .owl-theme .owl-nav .owl-next:hover {
+    background: #cbebec !important;
+}
+
+.owl-carousel .carousel-nav-img {
+    width: 32px;
+    height: 32px;
+    padding: 6px;
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 1em, calc(100% - 1em) 0);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 1em, calc(100% - 1em) 0);
+}
+
+.owl-carousel .carousel-img {
+    -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 2em, calc(100% - 2em) 0);
+    clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 2em, calc(100% - 2em) 0);
+}
+
+.owl-carousel .carousel-img-wrapper {
+    position: relative;
+    overflow: hidden;
+}
+
+.owl-carousel .carousel-img-wrapper:after {
+    content: '';
+    display: block;
+    height: 100%;
+    position: absolute;
+    top: 0;
+    width: 100%;
+}

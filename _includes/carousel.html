@@ -1,0 +1,31 @@
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.2/jquery.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script>
+    const img_left = `<img class="carousel-nav-img" src="/assets/ico/chevron-left.svg">`
+    const img_right = `<img class="carousel-nav-img" src="/assets/ico/chevron-right.svg">`
+    function make_carousel(o) {
+        jQuery(o).owlCarousel({
+            margin: 16,
+            items: 1,
+            responsive: {
+                0: {
+                    autoWidth: false
+                },
+                600: {
+                    autoWidth: true
+                },
+            },
+            nav: true,
+            dots: false,
+            navText: [img_left, img_right],
+            loop: true
+        })
+    }
+
+    function owl() {
+        const owls = document.querySelectorAll('.owl-carousel');
+        for (const o of owls) {
+            make_carousel(o);
+        }
+    }
+</script>

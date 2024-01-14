@@ -1,70 +1,8 @@
-<style>
-
-.page-content {
-background-color: whitesmoke;
-}
-
-.call_to_action {
-
-margin-top:auto;
-margin-bottom:auto;
-padding: 0.8em;
-border: 3px solid #99dddf;
-color: black;
-}
-.call_to_action >*{
-vertical-align: middle;
-}
-
-.call_to_action > img{
-height: 1em;
-width: 1em;
-padding-right: 0.5em;
-}
-
-.logo {
-width: 12em;
-}
-
-.spacing{
-align-items: center;
-text-align:center;
-    display: flex;
-    justify-content: space-between;
-
-
-}
-
-#header_top {
-  position: -webkit-sticky;
-  position: sticky;
-  top:0;
-  z-index: 1;
-  background-color: #fefefe;
-}
-</style>
-
-<header id="section_home" class="site-header" role="banner">
-
-  <div class="wrapper ">
-  <div class="spacing">
-    <img class="logo" src="/assets/logo.svg" alt="logo"/>
-  <a class=" call_to_action" href="tel: {{ site.phone | escape }}"><img src="/assets/phone.svg"><span>{{ site.phone_short | escape }}</span></a>
-  
-  </div>
-  </div>
-
-</header>
-
-<header id="header_top"  class="site-header" role="banner">
-
-  <div class="wrapper">
-      <nav class="site-nav">
-    
-<a class="page-link" href="#section_home">Úvod</a>
-<a class="page-link" href="#section_service">Služby</a>
-<a class="page-link" href="#section_price">Ceník</a>
-<a class="page-link" href="#section_contact">Kontakt</a>
-      </nav>
-  </div>
+<header>
+    <div class="content-wrapper">
+        <div class="header-flex">
+            <a href="index.html" class="home-link"><img src="/assets/img/logotext.svg"></a>
+            <a class="hero-link" aria-label="Zavolejte nám" href="{{ tel:site.phone }}"><img src="/assets/ico/phone-call.svg"><span>{{ site.phone_short }}</span></a>
+        </div>
+    </div>
 </header>
