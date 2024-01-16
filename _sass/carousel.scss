@@ -48,6 +48,7 @@ main .owl-carousel .owl-nav {
 
 .owl-carousel .owl-nav .owl-prev:hover, .owl-theme .owl-nav .owl-next:hover {
     background: #cbebec !important;
+    border-radius: 0 !important;
 }
 
 .owl-carousel .carousel-nav-img {
@@ -75,4 +76,8 @@ main .owl-carousel .owl-nav {
     position: absolute;
     top: 0;
     width: 100%;
+}
+
+main .owl-carousel {
+    margin-top: 2em;
 }

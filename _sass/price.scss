@@ -3,7 +3,8 @@
     margin: auto;
     display: flex;
 
-    background-color: $contrast;
+    background-image: url('/assets/img/concrete_staggered.webp');
+    background-position: center;
 
     -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 2em, calc(100% - 2em) 0);
     clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 2em, calc(100% - 2em) 0);
