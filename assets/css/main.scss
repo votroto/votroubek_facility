@@ -1,11 +1,11 @@
 ---
 ---
 
-@import "main";
-@import "typescale";
-@import "nav";
-@import "header";
-@import "footer";
-@import "hero";
-@import "carousel";
-@import "price";
+@use "root";
+@use "typescale";
+@use "nav";
+@use "header";
+@use "footer";
+@use "hero";
+@use "carousel";
+@use "price";

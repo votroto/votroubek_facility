@@ -41,7 +41,7 @@ Jsem vystudovaný mechanik chladících a mrazících zařízení a jejich reviz
 
 *Příjem nových zakázek z důvodu pracovní vytíženosti aktuálně pozastaven. Děkuji za pochopení.*
 
-<div class="price_section">
+<div id="price_section">
     <div class="price_card">
         <div class="price_bubble">
             <div class="price_bubble_content">
@@ -60,3 +60,4 @@ Jsem vystudovaný mechanik chladících a mrazících zařízení a jejich reviz
     </div>
 </div>
 
+<br/>

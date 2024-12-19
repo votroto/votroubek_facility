@@ -1,21 +1,22 @@
-.nav-grid {
+@use "var";
+
+.header-flex {
     display: flex;
     gap: 2em;
-    justify-content: end;
+    justify-content: space-between;
     align-items: center;
-    margin-right: 2em;
 
     @media only screen and (max-width: 600px) {
         gap: 1em;
-        margin-right: 1em;
     }
 }
 
-nav {
-    font-family: $heading-font;
-    background-color: $bg-color;
+header {
+    display: flex;
+
+    font-family: var.$heading-font;
+    background-color: var.$bg-color;
     font-size: 16px;
-    position: sticky;
     width: 100%;
     top: 0px;
 
@@ -26,53 +27,41 @@ nav {
     }
 }
 
-.fab {
-    display: none;
-    position: fixed;
-    bottom: 16px;
-    right: 16px;
+.home-link {
+    height: 51px;
+}
+
+.home-link img {
+    height: 100%;
+}
+
+
+.hero-link {
     width: fit-content;
     height: fit-content;
-    background: $contrast;
+    background: var.$contrast;
     color: black;
     padding: 16px;
     padding-right: 20px;
     padding-left: 20px;
-    z-index: 11;
     gap: 12px;
 
     align-items: center;
 
+    font-size: 18px;
+    display: flex;
+
     -webkit-clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 1em, calc(100% - 1em) 0);
     clip-path: polygon(0 0, 0 100%, 100% 100%, 100% 1em, calc(100% - 1em) 0);
-
-    @media only screen and (max-width: 600px) {
-        font-size: 18px;
-        display: flex;
-    }
 }
 
-.fab {
-    animation: appear 0.5s;
-}
-
-.fab img {
+.hero-link img {
     width: 24px;
     height: 24px;
     vertical-align: middle;
 }
 
-@keyframes appear {
-    0% {
-        opacity: 0;
-    }
-
-    100% {
-        opacity: 1;
-    }
-}
-
-.fab span {
+.hero-link span {
     font-size: 16px;
     line-height: 16px;
 }

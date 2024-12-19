@@ -1,8 +1,4 @@
-$bg-color: #fefaf7;
-$fg-color: #000000;
-$contrast: #cbebec;
-$body-font: 'Work Sans', sans-serif;
-$heading-font: 'Work Sans', sans-serif;
+@use "var";
 
 body,
 html {
@@ -12,9 +8,9 @@ html {
 }
 
 body {
-    background: $bg-color;
-    color: $fg-color;
-    font-family: $body-font;
+    background: var.$bg-color;
+    color: var.$fg-color;
+    font-family: var.$body-font;
 }
 
 h1,
@@ -22,11 +18,11 @@ h2,
 h3,
 h4,
 h5 {
-    font-family: $heading-font;
+    font-family: var.$heading-font;
 }
 
 a {
-    font-family: $heading-font;
+    font-family: var.$heading-font;
     text-decoration: none;
     color: inherit;
 }

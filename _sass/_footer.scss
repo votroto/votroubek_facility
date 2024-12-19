@@ -1,3 +1,9 @@
+@use "var";
+
+main + footer {
+    margin-top: 3em;
+}
+
 footer {
     display: flex;
     color: #eee;
@@ -19,7 +25,7 @@ footer ul {
 }
 
 .tail-footer .content-wrapper {
-    background-color: $contrast;
+    background-color: var.$contrast;
 }
 
 .call h5 {
@@ -29,7 +35,7 @@ footer ul {
 .call a {
     font-size: 1.953rem;
     font-weight: 600;
-    color: $contrast;
+    color: var.$contrast;
 }
 
 footer ul {
