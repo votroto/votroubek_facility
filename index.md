@@ -46,7 +46,7 @@ Jsem vystudovaný mechanik chladících a mrazících zařízení a jejich reviz
         <div class="price_bubble">
             <div class="price_bubble_content">
                 <small class="price_bubble_content_one">od</small>
-                <span  class="price_bubble_content_two">650</span>
+                <span  class="price_bubble_content_two">890</span>
                 <small class="price_bubble_content_thr">Kč / hod.</small>
             </div>
         </div>
